@@ -149,6 +149,13 @@ img {
   background: var(--overlays-color);
   padding: 188px 0;
   align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/Dark-bg.png"), url("../images/people-office1.jpg");
+  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
 }
 
 .main-title {
@@ -209,6 +216,30 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.about-link::before {
+  content: "";
+  display: block;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-link:nth-child(1)::before {
+  background-image: url(../css/icons/strategy.png);
+}
+.about-link:nth-child(2)::before {
+  background-image: url(../css/icons/punctuality.png);
+}
+.about-link:nth-child(3)::before {
+  background-image: url(../css/icons/diligence.png);
+}
+.about-link:nth-child(4)::before {
+  background-image: url(../css/icons/technologies.png);
+}
+
 .link {
   text-decoration: none;
 }
@@ -224,7 +255,6 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-
 .body-text {
   color: var(--body-text-color);
   font-size: 16px;
@@ -246,7 +276,6 @@ img {
   text-transform: none;
   text-align: center;
 }
-
 .team-title {
   color: var(--overlays-color);
   font-family: "Roboto";
@@ -276,7 +305,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
 }
-
 .team-text {
   padding: 32px 16px;
 }
@@ -290,7 +318,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
-
 .team {
   background-color: var(--color-cloud);
   padding: 120px 0;
@@ -302,14 +329,13 @@ img {
   margin: 0;
   padding: 0;
 }
-
-/* Doing section */
-
+}
+.team-list {
+  di
 .doing {
   padding-bottom: 120px;
   align-items: center;
 }
-
 .doing-title {
   color: var(--overlays-color);
   font-size: 36px;
@@ -333,13 +359,11 @@ img {
   margin: 0;
   padding: 0;
 }
-
 .doing-list-img {
   width: calc((100%-48px) / 3);
 }
-
-/* Our Team section */
-
+  margin: 0;
+  padding
 .team-list {
   list-style: none;
 }
@@ -347,12 +371,12 @@ img {
   list-style: none;
   display: flex;
   flex-direction: row;
+
   justify-content: center;
   padding-top: 96px;
   gap: 24px;
 }
-
-/* Main Portfolio */
+  list-style: none;
 
 .portfolio-list {
   list-style: none;
@@ -365,7 +389,6 @@ img {
   row-gap: 48px;
   margin: auto;
 }
-
 .filters {
   padding: 96px 0 120px;
 }
@@ -379,7 +402,6 @@ img {
   padding: 0;
   gap: 24px;
 }
-
 .filter-button {
   color: var(--ctas-links-color);
   background-color: var(--color-cloud);
@@ -399,44 +421,75 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
-
 .filter-button:not(:last-child) {
   margin-right: 24px;
 }
-
 .filter-button:hover,
 .filter-button:focus {
   color: var(--background-color);
   background-color: var(--ctas-color);
   border: 1px solid transparent;
 }
-
 .portfolio {
   list-style: none;
   text-decoration: none;
   width: calc((100% - 48px) / 3);
 }
-
 .portfolio-project-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
 .about-header {
   color: var(--overlays-color);
   font-size: 20px;
   font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
+
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   margin-top: 0;
 }
+  font-style: normal;
 
-/* Footer styles */
+.customers {
+  padding-bottom: 120px;
+  align-items: center;
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customers-title {
+  color: var(--overlays-color);
+  font-size: 36px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  align-items: center;
+  margin-bottom: 72px;
+  margin-top: 120px;
+}
+.customers-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.customers-list-card {
+  width: calc((100%-24px) / 6);
+}
+  margin: 0;
+  padd
 .page-footer {
   background: var(--overlays-color);
   padding: 100px 0;
@@ -456,7 +509,6 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .logo-footer {
   color: var(--color-cloud);
   font-family: "Raleway", sans-serif;
@@ -469,7 +521,6 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .footer-text {
   color: var(--color-cloud);
   font-family: "Roboto";
@@ -481,4 +532,19 @@ img {
   text-decoration: none;
   max-width: 264px;
   margin: 0;
+}
+.social-links {
+  padding: 100px auto 132px 120px;
+}
+.footer-social-title {
+  color: var(--background-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
