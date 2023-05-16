@@ -230,16 +230,16 @@ img {
 }
 
 .about-link:nth-child(1):before {
-  background-image: url(../css/icons/strategy.png);
+  background-image: url(../css/icons/strategy.svg);
 }
 .about-link:nth-child(2):before {
-  background-image: url(../css/icons/punctuality.png);
+  background-image: url(../css/icons/punctuality.svg);
 }
 .about-link:nth-child(3):before {
-  background-image: url(../css/icons/diligence.png);
+  background-image: url(../css/icons/diligence.svg);
 }
 .about-link:nth-child(4):before {
-  background-image: url(../css/icons/technologies.png);
+  background-image: url(../css/icons/technologies.svg);
 }
 
 .link {
@@ -503,7 +503,8 @@ img {
 }
 
 .customers-list-card {
-  width: calc((100%-24px) / 6);
+  width: calc((100%-120px) / 6);
+  height: 88px;
 }
 
 /* Footer styles */
@@ -511,6 +512,13 @@ img {
   background: var(--overlays-color);
   padding: 100px 0;
 }
+
+.footer-container {
+  display: flex;
+  margin-right: 120px;
+  align-items: baseline;
+}
+
 .logo-link {
   text-decoration: none;
   display: inline-block;
