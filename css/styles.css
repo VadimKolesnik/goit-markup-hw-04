@@ -231,6 +231,8 @@ img {
 
 .about-link:nth-child(1):before {
   background-image: url(../css/icons/strategy.svg);
+  /* width: 64px;
+  height: 64px; */
 }
 .about-link:nth-child(2):before {
   background-image: url(../css/icons/punctuality.svg);
@@ -510,13 +512,19 @@ img {
 /* Footer styles */
 .page-footer {
   background: var(--overlays-color);
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
 }
 
 .footer-container {
   display: flex;
-  margin-right: 120px;
+  gap: 120px;
   align-items: baseline;
+}
+
+.footer-logo {
+  margin-right: 120px;
 }
 
 .logo-link {
