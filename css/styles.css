@@ -152,7 +152,7 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/Dark-bg.png"), url("../images/people-office1.jpg");
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1.jpg");
   background-size: cover;
   background-position: center, center;
   background-repeat: no-repeat;
@@ -212,27 +212,26 @@ img {
   padding: 0;
 }
 
-.about-link {
-  width: calc((100% - 72px) / 4);
-}
-
-.about-link::before {
-  content: "";
-  display: block;
-
+.features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
+/* .about-icon {
+  /* content: "";
+  display: block; */
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+} */
 
+
+/* 
 .about-link:nth-child(1):before {
   background-image: url(../css/icons/strategy.svg);
-  /* width: 64px;
-  height: 64px; */
 }
 .about-link:nth-child(2):before {
   background-image: url(../css/icons/punctuality.svg);
@@ -242,7 +241,7 @@ img {
 }
 .about-link:nth-child(4):before {
   background-image: url(../css/icons/technologies.svg);
-}
+} */
 
 .link {
   text-decoration: none;
@@ -257,7 +256,8 @@ img {
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 .body-text {
@@ -268,7 +268,8 @@ img {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 .main-title {
   font-size: 56px;
@@ -387,6 +388,35 @@ img {
   gap: 24px;
 }
 
+.team-social {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link-team {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.social-link-team:hover,
+.social-link-team:focus {
+  background-color: #404BBF;
+}
+
 /* Main Portfolio */
 
 .portfolio-list {
@@ -444,6 +474,8 @@ img {
   color: var(--background-color);
   background-color: var(--ctas-color);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .portfolio {
@@ -479,6 +511,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.customers-container {
+  padding: 0
+  marging: 0;
+}
 
 .customers-title {
   color: var(--overlays-color);
@@ -505,26 +541,72 @@ img {
 }
 
 .customers-list-card {
-  width: calc((100%-120px) / 6);
+  /* width: calc((100%-120px) / 6); */
   height: 88px;
+  width: 168px;
+  padding: 16px 32px;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: #8e8f99;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: #404BBF;
+}
+
+.customers-list-card:hover,
+.customers-list-cardk:focus {
+  border: 1px solid #404BBF;
 }
 
 /* Footer styles */
-.page-footer {
+.footer {
   background: var(--overlays-color);
-  padding-top: 100px;
-  padding-left: 156px;
-  padding-bottom: 100px;
+  width: 1440px;
+  padding: 0;
 }
 
 .footer-container {
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
   display: flex;
   gap: 120px;
   align-items: baseline;
 }
 
-.footer-logo {
-  margin-right: 120px;
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus{
+  background: #31D0AA;
 }
 
 .logo-link {
@@ -569,9 +651,7 @@ img {
   margin: 0;
 }
 
-.social-links {
-  padding: 100px auto 132px 120px;
-}
+
 
 .footer-social-title {
   color: var(--background-color);
@@ -584,4 +664,8 @@ img {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.social-icon {
+  fill: #f4f4fd;
 }
