@@ -224,11 +224,9 @@ img {
 /* .about-icon {
   /* content: "";
   display: block; */
-  /* background-size: contain;
+/* background-size: contain;
   background-repeat: no-repeat;
   background-position: center; */
-} */
-
 
 /* 
 .about-link:nth-child(1):before {
@@ -415,25 +413,25 @@ img {
 
 .social-link-team:hover,
 .social-link-team:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 /* Main Portfolio */
 
-.portfolio-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  column-gap: 24px;
-  row-gap: 48px;
-  margin: auto;
-}
-
 .filters {
   padding: 96px 0 120px;
+
+  .portfolio-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin: auto;
+  }
 }
 .button-list-filters {
   list-style: none;
@@ -476,13 +474,21 @@ img {
   background-color: var(--ctas-color);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
 .portfolio {
   list-style: none;
   text-decoration: none;
   width: calc((100% - 48px) / 3);
+}
+.portfolio-item {
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-project-content {
@@ -513,8 +519,8 @@ img {
   margin-right: auto;
 }
 .customers-container {
-  padding: 0
-  marging: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .customers-title {
@@ -559,19 +565,14 @@ img {
   fill: var(--helper-text-color);
 }
 
-/* .customers-icon:hover,
-.customers-icon:focus {
-  fill: #404BBF;
-} */
-
 .customers-list-link:hover .customers-icon,
 .customers-list-link:focus .customers-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
-.customers-list-card:hover, 
+.customers-list-card:hover,
 .customers-list-card:focus {
-  border: 1px solid #404BBF;
+  border: 1px solid #404bbf;
 }
 /* Footer styles */
 .footer {
@@ -614,8 +615,8 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus{
-  background: #31D0AA;
+.social-link:focus {
+  background: #31d0aa;
 }
 
 .logo-link {
@@ -659,8 +660,6 @@ img {
   max-width: 264px;
   margin: 0;
 }
-
-
 
 .footer-social-title {
   color: var(--background-color);
