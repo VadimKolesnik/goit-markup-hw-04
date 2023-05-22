@@ -596,7 +596,6 @@ img {
   padding-left: 156px;
   padding-bottom: 100px;
   display: flex;
-  /* gap: 120px; */
   align-items: baseline;
 }
 
@@ -684,6 +683,7 @@ img {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .social-icon {
