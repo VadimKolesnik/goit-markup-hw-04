@@ -248,7 +248,7 @@ img {
   text-decoration: none;
 }
 
-.about-header {
+/* .about-header {
   color: var(--overlays-color);
   font-size: 20px;
   font-family: "Roboto";
@@ -257,7 +257,7 @@ img {
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
-}
+} */
 
 .body-text {
   color: var(--body-text-color);
@@ -527,10 +527,10 @@ img {
   margin-right: auto;
 }
 
-.customers-container {
+/* .customers-container {
   padding: 0;
   margin: 0;
-}
+} */
 
 .customers-title {
   color: var(--overlays-color);
